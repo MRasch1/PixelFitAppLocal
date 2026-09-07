@@ -13,6 +13,7 @@
 
     <div class="add-food-overlay"></div>
 
+    <!-- page-leaving er animationen i css filen. isLeaving starter som false. -->
     <div class="add-food-content @(isLeaving ? "page-leaving" : "")">
 
         <!-- TOPBAR -->
@@ -243,6 +244,7 @@
 
     private bool saving = false;
 
+    // isLeaving bruges til at styre animation
     private bool isLeaving = false;
 
     private string message = "";
@@ -384,7 +386,7 @@
         }
     }
 
-
+    //Det er en guard clause, der forhindrer, at man forlader siden flere gange.
     private async Task GoBack()
     {
         if (isLeaving)
@@ -396,7 +398,7 @@
         await LeavePage();
     }
 
-
+    //Når man forlader siden, sættes isLeaving til true.
     private async Task LeavePage()
     {
         isLeaving = true;

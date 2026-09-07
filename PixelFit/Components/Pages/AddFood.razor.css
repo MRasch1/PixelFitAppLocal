@@ -2,10 +2,13 @@
 
 .add-food-page {
     position: fixed;
+    /*inset bliver brugt til at strække elementet til at fylde hele viewporten*/
     inset: 0;
     width: 100vw;
     height: 100vh;
+    /*Hvis indholdet er højere end viewporten, skal der kunne scrolles*/
     overflow-y: auto;
+    /*Hvis indholdet er bredere end viewporten, skal der ikke kunne scrolles*/
     overflow-x: hidden;
     color: white;
     background-image: linear-gradient( rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.96) ), url("images/AkostR.jpg");
@@ -333,16 +336,18 @@
     }
 }
 
-
+/*En animation bliver defineret*/
 @keyframes addFoodPageExit {
-
+    /*Start tilstanden*/
     from {
         opacity: 1;
+        /*Elementet står stille*/
         transform: translateX(0);
     }
-
+    /*Slut tilstanden*/
     to {
         opacity: 0;
+        /*Elementet bevæger sig til højre*/
         transform: translateX(25px);
     }
 }
@@ -408,7 +413,8 @@
 }
 
 
-
+/*Hvis brugeren har valgt at reducere animationer, skal de deaktiveres*/
+/*Inde under tilgængelighedsindstillingerne kan man reducere animationer*/
 @media (prefers-reduced-motion: reduce) {
 
     .back-button,

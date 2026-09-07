@@ -247,6 +247,8 @@
                 <div class="goal-grid">
 
                     <!-- VÆGTTAB -->
+                    <!-- Den tilføjer css-klassen selected-goal når målet er "loss" -->
+                    <!-- Det er til at vise at den boks man har valgt viser en anden farve. -->
                     <button class="goal-card goal-select-card @(selectedGoal == "loss" ? "selected-goal" : "")"
                             @onclick='() => SelectGoal("loss")'>
 
