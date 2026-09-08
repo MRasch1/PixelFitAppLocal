@@ -1,4 +1,4 @@
-﻿namespace PixelFit.Models.Nutrition
+﻿namespace PixelFit.DTOS.Nutrition
 {
     public class UserProfileResponse
     {

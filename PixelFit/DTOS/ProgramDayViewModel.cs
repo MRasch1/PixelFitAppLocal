@@ -1,4 +1,4 @@
-﻿namespace PixelFit.Models.Training
+﻿namespace PixelFit.DTOS.Training
 {
     public class ProgramDayViewModel
     {

@@ -1,8 +1,10 @@
-﻿namespace PixelFit.Models.Training
+﻿namespace PixelFit.DTOS.Training
 {
-    public class EditableExerciseSet
+    public class ExerciseSetResponse
     {
         public int Id { get; set; }
+
+        public int TrainingDayExerciseId { get; set; }
 
         public int Reps { get; set; }
 

@@ -1,4 +1,4 @@
-﻿namespace PixelFit.Models.Food
+﻿namespace PixelFit.DTOS.Food
 {
     public class CreateMealRequest
     {

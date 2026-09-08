@@ -1,7 +1,9 @@
-﻿namespace PixelFit.Models.Food
+﻿namespace PixelFit.DTOS.Food
 {
-    public class CreateFoodItemRequest
+    public class FoodItemResponse
     {
+        public int Id { get; set; }
+
         public string Name { get; set; } =
             string.Empty;
 

@@ -1,6 +1,6 @@
-﻿namespace PixelFit.Models.Training
+﻿namespace PixelFit.DTOS.Training
 {
-    public class MuscleGroupResponse
+    public class TrainingProgramResponse
     {
         public int Id { get; set; }
 

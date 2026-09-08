@@ -1,4 +1,4 @@
-﻿using PixelFit.Models.Auth;
+﻿using PixelFit.DTOS.Auth;
 using System.Net.Http.Json;
 
 namespace PixelFit.Service

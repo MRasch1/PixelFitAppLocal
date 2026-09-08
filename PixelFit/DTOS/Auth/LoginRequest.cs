@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PixelFit.Models.Auth
+namespace PixelFit.DTOS.Auth
 {
-    public class RegisterRequest
+    public class LoginRequest
     {
         public string Email { get; set; } = string.Empty;
 
