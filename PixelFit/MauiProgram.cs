@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 using PixelFit.Service;
+using System.Globalization;
 
 namespace PixelFit
 {
@@ -9,6 +10,9 @@ namespace PixelFit
         {
             // Opretter MAUI-applikationen
             var builder = MauiApp.CreateBuilder();
+
+            CultureInfo.DefaultThreadCurrentCulture = CultureInfo.InvariantCulture;
+            CultureInfo.DefaultThreadCurrentUICulture = CultureInfo.InvariantCulture;
 
             builder
                 .UseMauiApp<App>()
