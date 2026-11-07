@@ -3,7 +3,7 @@
 	<PropertyGroup>
 
 		<!-- PixelFit bygges kun til Android lige nu -->
-		<TargetFrameworks>net8.0-android</TargetFrameworks>
+		<TargetFramework>net8.0-android</TargetFramework>
 
 		<OutputType>Exe</OutputType>
 		<RootNamespace>PixelFit</RootNamespace>
@@ -13,6 +13,7 @@
 
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
+		<MauiVersion>8.0.100</MauiVersion>
 
 		<!-- Blazor CSS -->
 		<EnableDefaultCssItems>false</EnableDefaultCssItems>
